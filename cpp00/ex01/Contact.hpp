@@ -14,5 +14,4 @@ class Contact {
 		std::string	darkest_secret;
 		~Contact();
 };
-
 #endif
