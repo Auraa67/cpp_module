@@ -1,0 +1,25 @@
+#include "PhoneBook.hpp"
+
+int main(void)
+{
+	PhoneBook	phonebook;
+	std::string	action;
+	int			i = 0;
+
+	while (1)
+	{
+		std::cout << "enter an action ADD, SEARCH OR EXIT: " << std::endl;
+		std::cin >> action;
+		if (action == "ADD") {
+			add_user(phonebook, &i);
+			i++;
+		}
+		else if (action == "SEARCH") {
+			search_user(phonebook, i);
+		}
+		else if(action == "EXIT") {
+			break ;
+		}
+	}
+	return 0;
+}

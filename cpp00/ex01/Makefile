@@ -1,9 +1,10 @@
 NAME = phonebook
 
-SRC = phoneBook.cpp\
-		contact.cpp\
+SRC = PhoneBook.cpp\
+		Contact.cpp\
+		main.cpp\
 
-OBJ = $(SRC=.cpp=.o)
+OBJ = $(SRC:.cpp=.o)
 
 CPP = c++
 
@@ -12,13 +13,10 @@ CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CPP) $(CFLAGS) $(OBJ) -o $(NAME)
+	$(CPP) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
 %.o: %.cpp
-	$(CPP) $(CFLAGS) -c $< -o $@
-
-$(LIBFT):
-	make -C all
+	$(CPP) $(CPPFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJ) 
