@@ -1,31 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
+/*   Account.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: merazafi <merazafi@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/06 11:17:17 by merazafi          #+#    #+#             */
-/*   Updated: 2026/02/06 11:17:18 by merazafi         ###   ########.fr       */
+/*   Created: 2026/02/06 11:16:39 by merazafi          #+#    #+#             */
+/*   Updated: 2026/02/06 11:16:40 by merazafi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP
-
-# include <iostream>
-# include <string>
-# include <cstdlib>
-# include "Contact.hpp"
-
-class PhoneBook {
-	public:
-		PhoneBook();
-		Contact	contacts[8];
-		~PhoneBook();
-};
-
-void	add_user(PhoneBook &phonebook, int *i);
-void	search_user(PhoneBook &phonebook);
-
-#endif
