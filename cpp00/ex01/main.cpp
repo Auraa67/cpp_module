@@ -15,7 +15,7 @@ int main(void)
 			i++;
 		}
 		else if (action == "SEARCH") {
-			search_user(phonebook, i);
+			search_user(phonebook);
 		}
 		else if(action == "EXIT") {
 			break ;

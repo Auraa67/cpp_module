@@ -3,6 +3,7 @@
 
 # include <iostream>
 # include <string>
+# include <cstdlib>
 # include "Contact.hpp"
 
 class PhoneBook {
@@ -12,7 +13,7 @@ class PhoneBook {
 		~PhoneBook();
 };
 
-void add_user(PhoneBook &phonebook, int *i);
-void search_user(PhoneBook &phonebook, int i);
+void	add_user(PhoneBook &phonebook, int *i);
+void	search_user(PhoneBook &phonebook);
 
 #endif
